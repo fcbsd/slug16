@@ -1,4 +1,6 @@
 # *BSD is Dead!
+
+[ScotLUG](http://scotlug.github.io/meetings/2016/january) [BSD is Dead!](https://fcbsd.github.io/slug16/) presentation.
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 ## View slides locally
