@@ -1,0 +1,7 @@
+{
+  "name": "presentation-bsd-is-dead",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}

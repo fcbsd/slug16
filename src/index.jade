@@ -1,0 +1,159 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title *BSD is Dead!
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1.bullet *BSD is Dead!
+        h2.bullet 
+            strong or future archeology...
+        h3.bullet installing OpenBSD 5.9-beta
+        h3.bullet by <a href="http://www.schoolio.co.uk/diary/2016-01-28/" title="*BSD is Dead!">Fred Crowson</a>
+                br
+                a(href='http://twitter.com/fcbsd') @fcbsd
+
+      section(data-bespoke-hash='intro')
+        h1 Introduction
+        h2.bullet
+        h2.bullet Part 1 
+        li.bullet a brief history
+        h2.bullet Part 2 
+        li.bullet installing OpenBSD 5.9 (the next release)
+      
+      section(data-bespoke-hash='history')
+        h1 History
+
+      section(data-bespoke-hash='start-of-time')
+        h1 1969
+        p.bullet The history of UNIX starts in this year with Ken Thompson, Dennis Ritchie and others started working on the "little used PDP-7 in a corner" at Bell Labs
+        h2.bullet 1 January 1970
+        p.bullet The start of time 
+        h2.bullet 1971 First Edition UNIX
+        h2.bullet 1973 Fourth Edition
+        p.bullet Rewritten in C -this made it portable and changed the history of <dfn title="Operating System">OS</dfn>s
+
+      section(data-bespoke-hash='bsd')
+        h2 1975
+        p.bullet UNIX leaves AT&amp;T and <dfn title="Berkley Software Distribution">BSD</dfn> is born at Computer Systems Research Group (CSRG) of the University of California, Berkeley.
+        h2.bullet 1980
+        p.bullet XENIX Microsoft does UNIX
+        p.bullet and 4BSD arrives
+
+      section(data-bespoke-hash='beastie')
+        h2.bullet 1983
+        img.beastie(src='images/42daemon.gif')
+        p.bullet 4.2BSD arrives, including TCP/IP, and the BSD Daemon
+
+      section(data-bespoke-hash='bsd43')
+        h2 1986
+        h3 4.3BSD
+        h2 1988
+        img.beastie(src='images/beastie.jpg')
+
+      section(data-bespoke-backdrop='flags', data-bespoke-hash='bsd386')
+        h2 1993
+        h3.bullet 4.4BSD
+        h3.bullet NetBSD 0.8 released April 1993
+        p.bullet Based on 4.3BSD via Net/2 and 386BSD
+        h3.bullet FreeBSD 1.0 released December 1993
+        p.bullet Based on 4.3BSD-Lite and 386BSD
+
+      section(data-bespoke-hash='NetBSD')
+        img(src='images/NetBSD.png' width='500px')
+
+      section(data-bespoke-hash='FreeBSD')
+        img(src='images/FreeBSD.png')
+
+      section(data-bespoke-hash='OpenBSD')
+        img(src='images/OpenBSD.gif' width='200px' height='200px')   
+        h3.bullet It was all going swimmingly until...
+        h3.bullet Theo de Raadt was ejected from the core group of NetBSD
+        h2.bullet OpenBSD born<br/>18 October 1995
+
+      section(data-bespoke-hash='lasttwo')
+        h1 More BSD's
+        h2.bullet DragonflyBSD 
+        p.bullet a fork from FreeBSD 4.8 in 2003
+        h2.bullet Mac OS X
+        p.bullet XNU Kernel, with userland utilities and C library from FreeBSD
+       
+      section(data-bespoke-hash='dead')
+        h1.bullet So BSD is dead...  
+
+      section(data-bespoke-hash='small')
+        h3.bullet It's only used by small companies 
+        p.bullet Adobe
+        p.bullet Juniper Networks
+        p.bullet Apple
+        p.bullet Nasa
+        p.bullet Nortel
+        p.bullet Nokia
+        p.bullet F5 Networks
+        p.bullet Google
+        p.bullet Yahoo 
+      
+      section(data-bespoke-hash='pause')
+
+      section(data-bespoke-hash='installation')
+        h1 OpenBSD Installation
+        p To start the process we need the correct installation program - this will depend on our architecture. Most standard modern laptops are intel/amd chipsets, thus we will need either i386 or amd64 installation programs.
+        p We are going create a 
+        a(href='http://www.openbsd.org/faq/faq4.html#MkInsMedia') Bootable USB Pendrive
+
+      section(data-bespoke-hash='platforms')
+        h2.bullet OpenBSD also supports: 
+        li.bullet armv7
+        li.bullet macppc
+        li.bullet sparc
+        li.bullet sparc64
+        li.bullet zaurus
+      
+      section(data-bespoke-hash='other_platforms')
+        h2.bullet OpenBSD also supports: 
+        li.bullet alpha armish aviion hppa landisk loongson luna88k octeon sgi socppc vax
+        p.bullet currently 19 architectures...
+
+      section   
+        h2.bullet Installation program choices
+        h3.bullet cd59.iso
+        h3.bullet floppy59.fs
+        h3.bullet install59.fs
+        h3.bullet install59.iso
+        h3.bullet miniroot59.fs
+        h3.bullet pxeboot
+
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Lets Do It
+
+      section
+        h1 Beer time !
+        h3 Presentataion built using:
+        h3 <a href="https://nodejs.org/" title="Node">node.js</a>
+        h3 <a href="https://github.com/bespokejs/bespoke" tile="Bespoke">Bespoke.js</a>
+        h4 And all running on <a href="http://www.openbsd.org/" title="OpenBSD">OpenBSD</a>
+
+      section
+        h3 Sources
+        h4 <a href="http://www.unix.org/what_is_unix/history_timeline.html" title="Unix Timeline">Unix Timeline</a>
+  
+      section
+
+      section
+        h2 Syntax Highlighting
+        pre
+          code.language-javascript.
+            pages.from('article', [
+              classes(),
+              keys(),
+              bullets('li, .bullet')
+            ]);
+
+    script(src='build/build.js')
